@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  background-color: #dcdde1;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -20,12 +21,76 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Container {
+  width: 381px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+input.Calc-results {
+  margin: 32px 12px;
+  width: 75%;
+  background-color: #efefef;
+  border: 1px solid #34495e;
+  text-align: right;
+  color: #34495e;
+  font-weight: 200;
+  font-size: 44px;
+  padding: 12px;
+}
+
+.buttonRow {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: #efefef;
+}
+
+.buttonRow:nth-child(6) {
+  padding-bottom: 24px;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: center;
+  width: 35px;
+  height: 14px;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid grey;
+}
+
+.button-number {
+  background: #7f8c8d;
+}
+
+.button-operator {
+  color: white;
+  background: #2e86de;
+}
+
+.button-clear {
+  background: #34495e;
+  width: 115px;
+}
+
+.button-hidden {
+  background: transparent;
+  color: transparent;
+  pointer-events: none;
+  border: none;
+}
+
+.button.button-number:first-of-type:nth-last-of-type(3) {
+  width: 115px;
 }
 
 @keyframes App-logo-spin {
