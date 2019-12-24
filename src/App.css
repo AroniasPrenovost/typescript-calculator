@@ -64,6 +64,7 @@ input.Calc-results {
   width: 35px;
   height: 14px;
   padding: 12px;
+  padding-bottom: 14px;
   margin: 10px;
   border: 1px solid grey;
 }
