@@ -5,6 +5,7 @@ export interface IProps {
   btnValue?: string;
   btnType?: string;
   onCLick: (e: any) => void;
+  onKeyPress: (es: any) => void;
 }
 
 interface IState {
@@ -22,11 +23,13 @@ class Button extends React.Component<IProps, IState> {
     btnType: "hidden"
   };
 
+  onKeyPress: any;
   componentWillMount() {
     const value: string = this.props.btnValue!;
     this.setState({ value });
     const btnType: string = this.props.btnType!;
     this.setState({ btnType });
+    document.addEventListener("keydown", this.props.onKeyPress.bind(this));
   }
 
   public render() {
@@ -36,6 +39,7 @@ class Button extends React.Component<IProps, IState> {
         className={btnClass}
         data-value={this.state.value}
         onClick={this.props.onCLick}
+        onKeyPress={this.props.onKeyPress}
       >
         {this.state.value}
       </div>

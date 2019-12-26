@@ -36,7 +36,7 @@
 }
 
 input.Calc-results {
-  margin: 32px 12px;
+  margin: 24px 6px;
   width: 75%;
   background-color: #efefef;
   border: 1px solid #34495e;
@@ -45,6 +45,16 @@ input.Calc-results {
   font-weight: 200;
   font-size: 44px;
   padding: 12px;
+}
+
+input.Calc-results:nth-child(2) {
+  margin: 0px 12px;
+  width: 78%;
+  text-align: left;
+  font-size: 18px;
+  padding: 6px;
+  border: 1px solid #d1ccc0;
+
 }
 
 .buttonRow {
